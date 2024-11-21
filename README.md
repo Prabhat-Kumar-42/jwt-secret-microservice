@@ -47,9 +47,9 @@ A simple microservice that provides a JWT secret key to anything that pings it. 
 
 ### API Endpoint
 
-    GET /jwt-secret
+GET /jwt-secret
 
-    Returns the JWT secret key in JSON format:
+Returns the JWT secret key in JSON format:
 
     ```json
     {
@@ -59,18 +59,18 @@ A simple microservice that provides a JWT secret key to anything that pings it. 
 
 ## Docker Setup
 
-    You can also run the service via Docker:
+You can also run the service via Docker:
 
-    Build the Docker image:
+Build the Docker image:
 
     ```bash
         docker build -t jwt-secret-service .
     ```
 
-    Run the container:
+Run the container:
 
     ```bash
         docker run -p 3000:3000 jwt-secret-service -e .env-file
     ```
 
-    This will make the service available at http://localhost:3000.
+This will make the service available at http://localhost:3000.
